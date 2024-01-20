@@ -6,28 +6,32 @@
     <title>Weather and Country Info</title>
     <!-- Add Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Add your custom CSS file -->
     <link rel="stylesheet" href="style.css" />
-
     <!-- Add jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-    <h1>Weather and Country Info</h1>
-    
-    <div id="search-box">
-        <input type="text" id="city-input" placeholder="Enter city name">
-        <button id="search-button">Search Weather</button>
+    <div id="app">
+        <div id="info-container">
+            <h1>Weather and Country Info</h1>
+            
+            <div id="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-button">Search Weather</button>
+            </div>
+
+            <div id="weather-info" class="info-box"></div>
+            <div id="country-info" class="info-box"></div>
+            <div id="timezone-info" class="info-box"></div>
+        </div>
+
+        <div id="map" class="map-box"></div>
     </div>
-
-    <div id="weather-info"></div>
-
-    <div id="country-info"></div>
-    <div id="timezone-info"></div>
-
-    <div id="map"></div>
 
     <!-- Add Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Add your custom JS file -->
     <script src="script.js"></script>
 </body>
 </html>

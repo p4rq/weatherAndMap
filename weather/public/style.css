@@ -1,20 +1,35 @@
-/* Add these styles to your existing style.css file or include in a style section in the head of your HTML */
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+}
+#app {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#info-container {
+    flex: 1; /* Растягиваем до максимальной ширины */
+    padding: 20px;
+    box-sizing: border-box; /* Включаем отступы в расчет ширины */
 }
 
 h1 {
     text-align: center;
     color: #333;
+    font-size: 1.5em; /* Уменьшаем размер шрифта заголовка */
 }
 
 #search-box {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 #city-input {
@@ -30,8 +45,9 @@ h1 {
     cursor: pointer;
 }
 
-#weather-info {
-    margin: 20px 0;
+/* Shared styles for info boxes */
+.info-box {
+    margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -39,27 +55,26 @@ h1 {
     overflow: hidden;
 }
 
-.column {
-    float: left;
-    width: 50%;
-}
-
-.weather-icon {
-    width: 50px;
-}
-
-#country-info {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Specific style for map box */
+.map-box {
+    width: 400px; /* Задаем фиксированную ширину карты */
+    height: 400px;
+    margin-left: 20px; /* Отступ слева от информационных блоков */
     border-radius: 8px;
     overflow: hidden;
+}
+#weather-info, #country-info, #timezone-info {
+    font-size: 0.9em; /* Уменьшаем размер шрифта информационных блоков */
 }
 
 #map {
-    height: 400px;
-    margin: 20px 0;
+    height: 400px; /* Увеличиваем высоту карты */
+    width: 50%;
+    margin: 20px 0 0 0;
     border-radius: 8px;
     overflow: hidden;
+}
+.weather-icon {
+    width: 30px; /* Adjust the width to your preferred size */
+    height: auto; /* Maintain aspect ratio */
 }
