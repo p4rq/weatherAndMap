@@ -15,8 +15,6 @@ This is a simple web application that provides weather information for a given c
   - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
