@@ -110,4 +110,4 @@ fetch('/api/weather/London')
 - Axios (for making HTTP requests)
 - Leaflet (for interactive maps)
 - jQuery
-- HTML5, CSS3
+- HTML5, CSS
