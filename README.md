@@ -1,7 +1,3 @@
-Certainly! Here's a basic README template based on the provided code. Feel free to customize it to fit your project's specific details and requirements.
-
----
-
 # Weather Information App
 
 This is a simple web application that provides weather information for a given city. The app includes features such as displaying current weather details, country information, and time zone details. It also utilizes geolocation to show the user's current location on the map.
